@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap')
+
+$text: #2B2A2A
+$white: #f1f1f1
+$accent: #9D95FF
+    
+body
+    margin: 0
+    padding: 0
+    font-family: 'Manrope'
+    background-color: $text
+    color: $white
+
+.main
+    padding: 2vw 3.333vw
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: start
+    height: calc( 100vh - 4vw )
+    &__head
+        display: flex
+        flex-direction: column
+        align-items: start
+    
+.page
+    &-title
+        font-size: 7.292vw
+        line-height: 100%
+        font-weight: 500
+        text-transform: uppercase
+        margin-top: 2.917vw
+        width: 46.875vw
+        margin-bottom: 2.917vw
+        letter-spacing: -0.146vw
+    &-subtitle
+        font-weight: 500
+        font-size: 1.667vw
+        line-height: 120%
+        width: 25.521vw
+        opacity: 70%
+
+.telegram-form
+    display: flex
+    align-items: flex-end
+    z-index: 10
+    transition: all .3s ease-in-out
+    &.hidden
+        animation: formHidden 1s ease-in-out
+        opacity: 0
+        transform: translateY(30%)
+    
+
+.form
+    &-item
+        display: flex
+        flex-direction: column
+        margin-right: 1.563vw
+    &__title
+        font-weight: 500
+        font-size: 1.25vw
+        line-height: 100%
+        margin-top: 0
+        margin-bottom: 2.083vw
+        letter-spacing: -0.025vw
+    &__input
+        width: 30.208vw
+        height: 4.688vw
+        background: none
+        border-radius: 1.042vw
+        color: $white
+        padding-left: 1.667vw
+        font-size: 1.25vw
+        font-weight: 500
+        line-height: 110%
+        transition: all .3s ease-in-out
+        border: 0.104vw solid rgba(241, 241, 241, 0.50)
+        &:focus
+            border: 0.104vw solid $accent
+            outline: none
+    &__btn
+        height: 4.688vw
+        width: 4.688vw
+        background-color: $white
+        border-radius: 5.208vw
+        display: flex
+        align-items: center
+        justify-content: center
+        border: none
+        cursor: pointer
+        outline: none
+        transition: all .3s ease-in-out
+        & svg
+            width: 1.979vw
+
+.block-success
+    display: flex
+    z-index: 1
+    opacity: 0
+    transform: translateY(30%)
+    background-color: $accent
+    padding: 1.042vw 1.667vw
+    border-radius: 5.208vw
+    align-items: center
+    justify-content: start
+    transition: all .3s ease
+
+    & svg
+        width: 1.563vw
+        margin-right: 0.521vw
+        & path
+            fill: $white
+    &__text
+        font-size: 1.667vw
+        font-weight: 500
+        line-height: 100%
+        margin: 0
+    &.open
+        transform: translateY(0)
+        opacity: 1
+        animation: succsOpen 1s ease-in-out
+    
+
+@keyframes formHidden
+    0%
+        opacity: 1
+        transform: translateY(0)
+    60%
+        opacity: 1
+        transform: translateY(-10%)
+    100%
+        opacity: 0
+        transform: translateY(30%)
+
+@keyframes succsOpen
+    0%
+        opacity: 0
+        transform: translateY(30%)
+    40%
+        opacity: 1
+        transform: translateY(-10%)
+    100%
+        opacity: 1
+        transform: translateY(0)
+
+        

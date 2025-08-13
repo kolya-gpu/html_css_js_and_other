@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&display=swap");
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("fonts/Gilroy-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("fonts/Gilroy-Light.ttf");
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy-Bold";
+  background-color: #9D95FF;
+  color: white;
+}
+
+.main {
+  padding: 2vw 3.333vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  height: calc(100vh - 4vw);
+}
+.main__head {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.page-title {
+  font-size: 7.292vw;
+  line-height: 100%;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 2.917vw;
+  width: 46.875vw;
+  margin-bottom: 2.917vw;
+  letter-spacing: -0.146vw;
+}
+.page-subtitle {
+  font-weight: 500;
+  font-size: 1.667vw;
+  line-height: 120%;
+  width: 25.521vw;
+  opacity: 70%;
+}
+
+.telegram-form {
+  display: flex;
+  align-items: flex-end;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+}
+.telegram-form.hidden {
+  animation: formHidden 1s ease-in-out;
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.563vw;
+}
+.form__title {
+  font-weight: 500;
+  font-size: 1.25vw;
+  line-height: 100%;
+  margin-top: 0;
+  margin-bottom: 2.083vw;
+  letter-spacing: -0.025vw;
+}
+.form__input {
+  width: 30.208vw;
+  height: 4.688vw;
+  background: none;
+  border-radius: 1.042vw;
+  color: #f1f1f1;
+  padding-left: 1.667vw;
+  font-size: 1.25vw;
+  font-weight: 500;
+  line-height: 110%;
+  transition: all 0.3s ease-in-out;
+  border: 0.104vw solid rgba(241, 241, 241, 0.5);
+}
+.form__input:focus {
+  border: 0.104vw solid #9D95FF;
+  outline: none;
+}
+.form__btn {
+  height: 4.688vw;
+  width: 4.688vw;
+  background-color: #f1f1f1;
+  border-radius: 5.208vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+.form__btn svg {
+  width: 1.979vw;
+}
+
+.block-success {
+  display: flex;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(30%);
+  background-color: #9D95FF;
+  padding: 1.042vw 1.667vw;
+  border-radius: 5.208vw;
+  align-items: center;
+  justify-content: start;
+  transition: all 0.3s ease;
+}
+.block-success svg {
+  width: 1.563vw;
+  margin-right: 0.521vw;
+}
+.block-success svg path {
+  fill: #f1f1f1;
+}
+.block-success__text {
+  font-size: 1.667vw;
+  font-weight: 500;
+  line-height: 100%;
+  margin: 0;
+}
+.block-success.open {
+  transform: translateY(0);
+  opacity: 1;
+  animation: succsOpem 1s ease-in-out;
+}
+
+@keyframes formHidden {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+}
+@keyframes succsOpen {
+  0% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=style.css.map */

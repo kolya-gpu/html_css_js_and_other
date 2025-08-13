@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap')
+
+// ПЕРЕМЕННЫЕ
+
+$text: #2B2A2A
+$accent: #9D95FF
+$white: #F6F6F6
+$transition: all .5s ease-in-out 
+
+
+body
+    margin: 0
+    padding: 0
+    background-color: $text
+    font-family: 'Manrope' !important
+
+a
+    text-decoration: none
+    color: $accent
+
+button, a, input
+    font-family: 'Manrope'
+
+
+.container
+    width: 93.75vw
+    margin: 0 auto
+
+.header
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    z-index: 10
+    transition: $transition
+    &__content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding-top: 1.771vw
+        padding-bottom: 1.771vw
+    &__wrap
+        display: flex
+        align-items: center
+    &__btn
+        background-color: $accent
+        color: $text
+        padding: 0.625vw 0.938vw 0.729vw // 12px 14px 18px
+        border-radius: 5.208vw
+        font-weight: 500
+        font-size: 1.042vw // 20px
+        letter-spacing: -0.021vw
+
+.logo svg
+    width: 9.479vw
+    height: 3.005vw
+
+.logo svg path
+    transition: $transition
+
+.menu
+    display: flex
+    padding: 0
+    list-style: none
+    margin-right: 5.208vw
+    &__list
+        margin-right: 2.083vw
+        &:last-of-type
+            margin-right: 0
+    &__link
+        color: $white
+        font-size: 1.042vw
+        line-height: 100%
+        letter-spacing: -0.021vw
+        font-weight: 500
+        transition: $transition
+    
+
+.banner
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background: url("../img/banner bg.png") no-repeat
+    background-position: center
+    background-size: cover
+    object-fit: cover
+    transition: $transition
+    position: fixed
+    top: 0
+    left: 0
+    z-index: -1
+    &__title
+        font-size: 6.25vw
+        line-height: 110%
+        font-weight: 500
+        color: $white
+        margin-top: 0
+        margin-bottom: 5.208vw
+        text-align: center
+    &__lables svg
+        width: 47.917vw
+        height: 3.542vw
+
+
+.about
+    background-color: $white
+    color: $text
+    border-radius: 2.083vw
+    z-index: 1
+    margin-top: 93vh
+    margin-bottom: 0
+    box-shadow: 0px -28px 62px 0px rgba(0, 0, 0, 0.20), 0px -112px 112px 0px rgba(0, 0, 0, 0.18), 0px -252px 151px 0px rgba(0, 0, 0, 0.10), 0px -449px 179px 0px rgba(0, 0, 0, 0.03), 0px -701px 196px 0px rgba(0, 0, 0, 0.00)
+    &__label
+        color: $accent
+    &__main
+        display: flex
+        align-items: start
+        justify-content: space-between
+    &__title
+        width: 52.083vw
+        margin-top: 1.667vw
+        margin-bottom: 0
+    &__head
+        margin-top: 4.167vw
+    &__items
+        display: flex
+        flex-direction: column
+        width: 36.458vw
+        margin-left: 5.208vw
+        margin-top: 19.792vw
+    &-item
+        display: flex
+        align-items: start
+        margin-bottom: 5.208vw
+        &:last-of-type
+            margin-bottom: 0
+    &__img
+        width: 2.5vw
+        margin-right: 2.083vw
+    &__value
+        font-size: 1.667vw
+        font-weight: 500
+        line-height: 120%
+        margin-top: 0.104vw
+        margin-bottom: 0
+    &__digits
+        display: flex
+        align-items: start
+        padding-bottom: 3.125vw
+        margin-top: 13.281vw
+        &__item
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            width: 30.208vw
+            height: 22.396vw
+            border-radius: 1.042vw
+            margin-right: 1.563vw
+            border-radius: 1.042vw
+            border: 2px solid rgba(43, 42, 42, 0.10)
+            background: #F6F6F6
+            &:last-of-type
+                margin-right: 0
+        &__text
+            margin-left: 2.5vw
+            margin-bottom: 2.708vw
+            font-size: 1.667vw
+            font-weight: 500
+            line-height: 110%
+            letter-spacing: -0.033vw
+            opacity: 0.5
+    &__digit
+        margin-left: 2.5vw
+        margin-top: 2.5vw
+        font-size: 7.813vw
+        line-height: 110%
+        letter-spacing: -0.156vw
+        margin-bottom: 0
+
+
+.directions
+    width: 100vw
+    margin-top: 9.375vw
+    margin-bottom: 10.625vw
+    &__content
+        display: flex
+        justify-content: space-between
+    &__label
+    color: $white
+    &__title
+        margin: 0
+        font-size: 3.333vw
+        font-style: normal
+        font-weight: 500
+        line-height: 100%
+        letter-spacing: -0.133vw
+        width: 61.979vw
+        height: 13.333vw
+    &__svg svg
+        width: 61.979vw
+        margin-top: 4.896vw
+
+
+
+.block-label
+    font-size: 1.667vw
+    font-weight: 500
+    line-height: 110%
+    margin: 0
+    letter-spacing: -0.033vw
+
+.section-title
+    font-size: 3.75vw
+    font-weight: 600
+    letter-spacing: -0.075vw
+    line-height: 110%
+
+
+.banner.hidden
+    height: 0
+    opacity: 0
+    overflow: hidden
+
+.header.dark
+    background-color: $white
+    & .menu__link
+        color: $text
+    & .logo svg path
+        fill: $text

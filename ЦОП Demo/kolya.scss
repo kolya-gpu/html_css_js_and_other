@@ -1,0 +1,224 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer{
+    display: flex;
+}
+
+.logo{
+    width: 204.711px;
+    height: 23px;
+    flex-shrink: 0;
+    display: inline-flex;
+    padding: 20px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.text{
+    display: flex;
+}
+
+.txt1{
+    color: #303030;
+    font-family: 'Gotham Pro';
+    font-size: 14px;    
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    display: inline-flex;
+    padding: 16px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.txt2{
+    color: #303030;
+    font-family: 'Gotham Pro';
+    font-size: 14px;    
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    display: inline-flex;
+    padding: 16px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.txt3{
+    color: #303030;
+    font-family: 'Gotham Pro';
+    font-size: 14px;    
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    display: inline-flex;
+    padding: 16px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.txt4{
+    color: #F5F7FA;
+    font-family: Gotham Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 15.4px */
+    letter-spacing: -0.28px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 16px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-left: 140px;
+    border-radius: 170px;
+    background: #5858F6;
+}
+
+.main_txt{
+    color: #303030;
+    font-family: Gotham Pro;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 86.4px */
+    letter-spacing: -1.44px;
+    max-width: 650px;
+    margin-left: 180px;
+}
+
+.main_txt2{
+    color: #303030;
+    font-family: Gotham Pro;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 27px */
+    max-width: 350px;
+    margin-left: 180px;
+}
+
+.give{
+    display: flex;
+    margin-top: 80px;
+    margin-left: 40px;
+}
+
+.txt4-1{
+    color: #F5F7FA;
+    font-family: Gotham Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 16px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-left: 140px;
+    border-radius: 170px;
+    background: #5858F6;
+}
+
+.txt4-2{
+    color: #959595;
+    font-family: Gotham Pro;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 14.4px */
+    padding: 20px 20px 20px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.txt5{
+    color: #5858F6;
+    font-family: Gotham Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: -0.32px;
+    text-transform: uppercase;
+    display: inline-flex;
+    padding: 16px 20px 15px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    border-radius: 170px;
+    border: 2px solid #5858F6;
+}
+
+.phones{
+    display: flex;
+    background: url(Rectangle\ 31.svg);
+    justify-content: right;
+}
+
+.phone1{
+    width: 208.035px;
+    height: 552.256px;
+    flex-shrink: 0;
+}
+
+.phone2{
+    width: 195.938px;
+    height: 538.326px;
+    flex-shrink: 0;
+}
+
+.phone3{
+    width: 209.135px;
+    height: 530.078px;
+    flex-shrink: 0;
+}
+
+.rectangle{
+    width: 1560px;
+    height: 372px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: rgba(245, 247, 250, 0.80);
+    box-shadow: 2px 4px 44px 0px rgba(0, 0, 0, 0.07), -2px -3px 11px 0px #FFF inset;
+    backdrop-filter: blur(17px);
+}
+
+.text2{
+    display: flex;
+    justify-content: space-between;
+    color: #5858F6;
+    font-family: Gotham Pro;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+    text-transform: uppercase;
+}
+
+.text3{
+    display: flex;
+    justify-content: space-between;
+    width: 260px;
+    color: #525252;
+    font-family: Gotham Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+}
